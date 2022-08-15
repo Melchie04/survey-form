@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <form id="survey-form">
+      <header>
+        <h1 id="title">E-learning Registration Form</h1>
+        <p id="description">Fill out the form carefully for registration</p>
+      </header>
+      <fieldset>
+        <label id="name-label">Name:
+          <input id="name" type="text" placeholder="Enter your name" required />
+        </label>
+        <label id="email-label">Email:
+          <input id="email" type="email" placeholder="Enter your Email" required />
+        </label>
+        <label id="number-label">Age:
+          <input id="number" type="number" placeholder="Age" min="10" max="99" required/>
+        </label>
+        <label>Gender
+          <select id="dropdown" required>
+            <option value="" disabled selected>(Select Gender)</option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Employment Status:
+          <label><input class="inline" type="radio" value="0" name="recommend" /> Employed</label>
+          <label><input class="inline" type="radio" value="1" name="recommend" /> Self-Employed</label>
+          <label><input class="inline" type="radio" value="2" name="recommend" /> Unemployed</label>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Select Course:
+          <label><input class="inline" type="checkbox" value="0" /> HTML</label>
+          <label><input class="inline" type="checkbox" value="1" /> CSS</label>
+          <label><input class="inline" type="checkbox" value="2" /> Javascript</label>
+          <label><input class="inline" type="checkbox" value="3" /> Bootstrap</label>
+          <label><input class="inline" type="checkbox" value="4" /> PHP</label>
+		</label>
+      </fieldset>
+      <fieldset>
+        <label>Tell me about yourself.
+          <textarea rows="3" cols="30" placeholder="Tell something here..."></textarea>
+			  </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
